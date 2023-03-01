@@ -1,3 +1,4 @@
+#tests the cli
 describe "bin/tictactoe" do
   it 'instantiates an instance of TicTacToe' do
     game = TicTacToe.new

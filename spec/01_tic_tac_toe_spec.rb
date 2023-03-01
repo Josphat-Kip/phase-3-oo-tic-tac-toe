@@ -1,5 +1,25 @@
-require_relative '../lib/tic_tac_toe.rb'
+#tests our helper methods
 
+# pseudocode:
+
+# 4. Create a method to convert user input from a 1-9 scale to an array-friendly format
+# 5. Create a method to make a move given a position and a mark
+# 6. Create a method to check whether a position is taken
+# 7. Create a method to check if a move is valid
+# 8. Create a method to count the number of occupied positions
+# 9. Create a method to determine the current player
+# 10. Create a turn method to receive user input, convert it to an index, and make a valid move
+# 11. Create a method to check if someone has won the game
+# 12. Create a method to check if the board is full
+# 13. Create a method to check if the game is a draw
+# 14. Create a method to check if the game is over
+# 15. Create a method to determine the winner
+
+
+
+require_relative '../lib/tic_tac_toe.rb'
+# Create a new game of tic tac toe
+# Create a method to display the board
 describe './lib/tic_tac_toe.rb' do
   describe TicTacToe do
     describe '#initialize' do
@@ -8,6 +28,7 @@ describe './lib/tic_tac_toe.rb' do
         expect(game.instance_variable_get(:@board)).to eq([" "," "," "," "," "," "," "," "," "])
       end
     end
+# Define a constant WIN_COMBINATIONS with 8 arrays of winning combinations
 
     describe 'WIN_COMBINATIONS' do
       it 'defines a constant WIN_COMBINATIONS with arrays for each win combination' do
